@@ -49,14 +49,14 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-crown',
     technologies: ['JavaScript', 'TypeScript', 'MongoDB', 'Express.js', 'Chart.js', 'Socket.io'],
     images: {
-      main: 'https://placehold.co/1024x768/404040/ffffff?text=Live+Leaderboard+Dashboard',
+      main: '/images/projects/stake-leaderboard/Screenshot 2025-08-26 at 01.42.21.jpg',
       gallery: [
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Player+Analytics',
+          url: '/images/projects/stake-leaderboard/Screenshot 2025-08-26 at 01.35.51.jpg',
           caption: 'Player Performance Analytics'
         },
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Statistics+Interface',
+          url: '/images/projects/stake-leaderboard/Screenshot 2025-08-26 at 01.46.53.jpg',
           caption: 'Comparative Statistics Interface'
         }
       ]

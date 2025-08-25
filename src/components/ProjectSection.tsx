@@ -76,10 +76,12 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                     className="relative group cursor-pointer"
                     onClick={() => openLightbox(project.images.main)}
                   >
-                    <div className="bg-neutral-200 w-full h-[338px] rounded-xl flex items-center justify-center">
-                      <span className="text-neutral-600 text-lg text-center">
-                        {project.title} Dashboard
-                      </span>
+                    <div className="w-full h-[338px] rounded-xl overflow-hidden bg-neutral-200">
+                      <img 
+                        src={project.images.main} 
+                        alt={`${project.title} Dashboard`}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
                     </div>
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl flex items-center justify-center">
                       <i className="fa-solid fa-expand text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-2xl"></i>
@@ -96,10 +98,12 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                         className="relative group cursor-pointer"
                         onClick={() => openLightbox(image.url)}
                       >
-                        <div className="bg-neutral-200 w-full h-[165px] rounded-xl flex items-center justify-center">
-                          <span className="text-neutral-600 text-sm text-center">
-                            {image.caption}
-                          </span>
+                        <div className="w-full h-[165px] rounded-xl overflow-hidden bg-neutral-200">
+                          <img 
+                            src={image.url} 
+                            alt={image.caption}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
                         </div>
                         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl flex items-center justify-center">
                           <i className="fa-solid fa-expand text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl"></i>
