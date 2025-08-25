@@ -26,7 +26,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-calculator',
     technologies: ['Python', 'Node.js', 'PostgreSQL', 'React', 'Redis', 'Docker', 'WebSocket', 'TensorFlow', 'Kubernetes', 'AWS Lambda'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Real-time+EV%2B+Dashboard',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Real-time+EV%2B+Dashboard',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Probability+Calculator',
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-crown',
     technologies: ['JavaScript', 'TypeScript', 'MongoDB', 'Express.js', 'Chart.js', 'Socket.io'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Live+Leaderboard+Dashboard',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Live+Leaderboard+Dashboard',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Player+Analytics',
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-chart-line',
     technologies: ['Python', 'Node.js', 'Redis', 'WebSocket', 'React', 'MongoDB'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Odds+Drop+Monitor',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Odds+Drop+Monitor',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Market+Analysis',
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-shield-halved',
     technologies: ['Python', 'Django', 'PostgreSQL', 'Celery', 'React', 'Redis'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Arbitrage+Scanner',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Arbitrage+Scanner',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Stake+Calculator',
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-brain',
     technologies: ['Python', 'TensorFlow', 'React Native', 'FastAPI', 'PostgreSQL'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=AI+Predictions',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=AI+Predictions',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Model+Training',
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-gamepad',
     technologies: ['Python', 'NumPy', 'Pandas', 'React', 'Chart.js'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Strategy+Simulator',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Strategy+Simulator',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Backtest+Results',
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-horse',
     technologies: ['Python', 'Django', 'MySQL', 'BeautifulSoup', 'React'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Horse+Racing+Analytics',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Horse+Racing+Analytics',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Track+Conditions',
@@ -187,7 +187,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-anchor',
     technologies: ['Node.js', 'Express', 'MongoDB', 'Puppeteer', 'React'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Dual+Platform+Interface',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Dual+Platform+Interface',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Account+Manager',
@@ -210,7 +210,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-cloud',
     technologies: ['Node.js', 'Web3.js', 'MongoDB', 'React', 'Puppeteer', 'Blockchain APIs'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Crypto+Dashboard',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Crypto+Dashboard',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Transaction+Monitor',
@@ -233,7 +233,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-database',
     technologies: ['Node.js', 'Express.js', 'PostgreSQL', 'GraphQL', 'Redis', 'AWS CloudFront'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Data+Streaming',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Data+Streaming',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Global+Integration',
@@ -256,7 +256,7 @@ export const projects: Project[] = [
     icon: 'fa-brands fa-telegram',
     technologies: ['Python', 'Telegram Bot API', 'SQLite', 'NLTK', 'APScheduler', 'Asyncio'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Bot+Network',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Bot+Network',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Content+Generation',
@@ -279,7 +279,7 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-bullseye',
     technologies: ['Python', 'Scrapy', 'MySQL', 'Django', 'Requests', 'Matplotlib'],
     images: {
-      main: 'https://placehold.co/800x600/404040/ffffff?text=Darts+Analytics',
+      main: 'https://placehold.co/1024x768/404040/ffffff?text=Darts+Analytics',
       gallery: [
         {
           url: 'https://placehold.co/600x400/f5f5f5/666666?text=Performance+Tracking',
