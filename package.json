@@ -20,7 +20,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx --fix",
+    "deploy:aws": "./scripts/deploy.sh",
+    "aws:create-stack": "aws cloudformation create-stack --stack-name betting-overview-infrastructure --template-body file://aws/cloudformation.yml --region us-east-1",
+    "aws:update-stack": "aws cloudformation update-stack --stack-name betting-overview-infrastructure --template-body file://aws/cloudformation.yml --region us-east-1",
+    "aws:delete-stack": "aws cloudformation delete-stack --stack-name betting-overview-infrastructure --region us-east-1",
+    "aws:stack-status": "aws cloudformation describe-stacks --stack-name betting-overview-infrastructure --region us-east-1 --query 'Stacks[0].{Status:StackStatus,Outputs:Outputs}'"
   },
   "eslintConfig": {
     "extends": [
