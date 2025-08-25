@@ -1,0 +1,111 @@
+/* Contact Component Styles */
+.contact-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.contact-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 3rem;
+}
+
+.contact-title {
+  font-size: 2.25rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: 3rem;
+  }
+}
+
+.contact-description {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  line-height: 1.75;
+}
+
+.contact-features {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .contact-features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-feature {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-feature-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #6b7280;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+.contact-feature-icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contact-feature-title {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.contact-feature-description {
+  color: #d1d5db;
+}
+
+.contact-stats {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #9ca3af;
+}
+
+.contact-stat {
+  text-align: center;
+}
+
+.contact-stat-number {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.contact-stat-label {
+  font-size: 0.875rem;
+}
