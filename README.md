@@ -1,5 +1,7 @@
 # Betting Projects Overview
 
+🚀 **LIVE DEMO:** Автоматический деплой настроен! Сайт обновляется при каждом коммите.
+
 A modern React TypeScript application showcasing our betting software portfolio with advanced component architecture and responsive design.
 
 ## 🚀 Quick Start
