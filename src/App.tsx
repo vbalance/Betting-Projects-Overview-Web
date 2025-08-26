@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Header, Hero, ProjectSection, Contact } from './components';
+import { Header, Hero, ProjectSection, Contact, TeamSection } from './components';
 import { projects } from './data/projects';
 import { APP_CONFIG } from './constants';
 import { scrollToTop } from './utils/helpers';
@@ -22,6 +22,7 @@ function App() {
     <div className="h-full text-base-content">
       <Header onBackToTop={handleScrollToTop} />
       <Hero projects={projects} />
+      <TeamSection />
       
       {projects.map((project, index) => (
         <div key={project.id} id={`project-${project.id}`}>

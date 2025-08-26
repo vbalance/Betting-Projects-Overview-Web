@@ -1,0 +1,300 @@
+/* TeamSection Component Styles */
+.team-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.upwork-profile-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.upwork-profile-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.12),
+    0 4px 10px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+/* Remove the top gradient line */
+.upwork-profile-card::before {
+  display: none;
+}
+
+/* Badge styles matching Upwork */
+.upwork-profile-card .bg-blue-50 {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.upwork-profile-card .bg-pink-50 {
+  background-color: #fdf2f8;
+  border: 1px solid #f9a8d4;
+}
+
+/* Badge text colors */
+.upwork-profile-card .text-blue-700 {
+  color: #1d4ed8;
+}
+
+.upwork-profile-card .text-pink-700 {
+  color: #be185d;
+}
+
+/* Avatar styling - prevent cropping */
+.upwork-profile-card .relative img {
+  transition: transform 0.3s ease;
+  border: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.upwork-profile-card:hover .relative img {
+  transform: scale(1.02);
+}
+
+/* Avatar container styling */
+.upwork-profile-card .w-20.h-20 {
+  border: 2px solid #f3f4f6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Online status indicator - top left, smaller */
+.upwork-profile-card .bg-green-500 {
+  background-color: #10b981;
+  box-shadow: 0 0 0 2px white;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+/* Upwork verified badge - rifled/textured effect */
+.upwork-verified-badge {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  box-shadow: 
+    0 2px 4px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #2563eb;
+  position: relative;
+}
+
+.upwork-verified-badge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+  border-radius: inherit;
+}
+
+.upwork-verified-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 4px 8px rgba(59, 130, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Separator lines */
+.upwork-profile-card .border-t {
+  border-color: #f3f4f6;
+}
+
+/* Fixed height sections for alignment */
+.upwork-profile-card .min-h-\[60px\] {
+  min-height: 60px;
+}
+
+.upwork-profile-card .min-h-\[120px\] {
+  min-height: 120px;
+}
+
+/* Stats section - center alignment */
+.upwork-profile-card .grid .text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.upwork-profile-card .grid .text-2xl {
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.upwork-profile-card .text-neutral-500 {
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Ensure text doesn't wrap */
+.upwork-profile-card .whitespace-nowrap {
+  white-space: nowrap;
+}
+
+/* View profile section */
+.upwork-profile-card h4 {
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* All work button */
+.upwork-profile-card button {
+  color: #6b7280;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.upwork-profile-card button:hover {
+  color: #374151;
+}
+
+.upwork-profile-card button:hover i {
+  transform: translateX(4px);
+}
+
+/* Specialties styling */
+.upwork-profile-card .space-y-2 div {
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Location styling */
+.upwork-profile-card .fa-location-dot {
+  color: #9ca3af;
+}
+
+/* Available now styling */
+.upwork-profile-card .fa-bolt {
+  color: #8b5cf6;
+}
+
+.upwork-profile-card .text-purple-600 {
+  color: #7c3aed;
+}
+
+/* Stats hover effects */
+.upwork-profile-card .grid .text-center:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Button animations */
+.upwork-profile-card button {
+  position: relative;
+  overflow: hidden;
+}
+
+.upwork-profile-card button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.upwork-profile-card button:hover::before {
+  left: 100%;
+}
+
+/* Team stats section */
+.team-section .bg-neutral-50 {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border: 1px solid #e2e8f0;
+}
+
+.team-section .text-3xl {
+  background: linear-gradient(135deg, currentColor 0%, currentColor 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .upwork-profile-card {
+    padding: 1rem;
+  }
+  
+  .team-section .grid-cols-3 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .team-section .text-4xl {
+    font-size: 2rem;
+  }
+}
+
+/* Animation for cards */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.upwork-profile-card {
+  animation: slideUp 0.6s ease-out;
+}
+
+.upwork-profile-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.upwork-profile-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.upwork-profile-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Success rate indicator */
+.success-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Specialty tags */
+.specialty-tag {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  color: #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.specialty-tag:hover {
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  transform: translateY(-1px);
+}
