@@ -26,47 +26,47 @@ const Hero: React.FC<HeroProps> = ({ projects }) => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10 flex-1 flex flex-col">
-        <div className="text-center max-w-4xl mx-auto mb-8">
-          <h1 className="text-4xl md:text-5xl text-white mb-4">
-            Building the Future of{' '}
-            <span className="bg-gradient-to-r from-neutral-400 via-neutral-400 to-neutral-400 bg-clip-text text-transparent">
+        <div className="text-center max-w-5xl mx-auto mb-8">
+          <h1 className="text-5xl md:text-6xl text-white mb-8 leading-tight">
+            <div className="mb-2 text-4xl md:text-5xl">Building the Future of</div>
+            <div className="bg-gradient-to-r from-neutral-300 via-white to-neutral-300 bg-clip-text text-transparent font-bold pb-2">
               Betting Software
-            </span>
+            </div>
           </h1>
-          <p className="text-lg text-neutral-100 mb-6">
+          <p className="text-xl text-neutral-200 mb-8 max-w-3xl mx-auto leading-relaxed">
             We are a team of innovators with {projects.length} active projects in betting analytics and automation, 
             pushing the boundaries of what's possible in the sports betting industry.
           </p>
-          <div className="flex justify-center space-x-4 mb-8">
-            <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm border border-neutral-300/20">
-              <i className="fa-solid fa-trophy text-neutral-300 text-sm"></i>
-              <span className="text-white text-sm">{projects.length} Active Projects</span>
+          <div className="flex justify-center gap-3 mb-10">
+            <div className="group flex items-center space-x-2 bg-gradient-to-r from-blue-600/20 to-blue-500/20 backdrop-blur-sm px-4 py-2 rounded border border-blue-400/30 hover:from-blue-600/30 hover:to-blue-500/30 hover:border-blue-400/50 transition-all duration-300 cursor-pointer">
+              <i className="fa-solid fa-trophy text-blue-400 text-sm group-hover:text-blue-300 transition-colors"></i>
+              <span className="text-white text-sm font-medium">{projects.length} Active Projects</span>
             </div>
-            <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm border border-neutral-300/20">
-              <i className="fa-solid fa-users text-neutral-300 text-sm"></i>
-              <span className="text-white text-sm">Expert Team</span>
+            <div className="group flex items-center space-x-2 bg-gradient-to-r from-green-600/20 to-green-500/20 backdrop-blur-sm px-4 py-2 rounded border border-green-400/30 hover:from-green-600/30 hover:to-green-500/30 hover:border-green-400/50 transition-all duration-300 cursor-pointer">
+              <i className="fa-solid fa-users text-green-400 text-sm group-hover:text-green-300 transition-colors"></i>
+              <span className="text-white text-sm font-medium">Expert Team</span>
             </div>
-            <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm border border-neutral-300/20">
-              <i className="fa-solid fa-rocket text-neutral-300 text-sm"></i>
-              <span className="text-white text-sm">Cutting Edge Tech</span>
+            <div className="group flex items-center space-x-2 bg-gradient-to-r from-purple-600/20 to-purple-500/20 backdrop-blur-sm px-4 py-2 rounded border border-purple-400/30 hover:from-purple-600/30 hover:to-purple-500/30 hover:border-purple-400/50 transition-all duration-300 cursor-pointer">
+              <i className="fa-solid fa-rocket text-purple-400 text-sm group-hover:text-purple-300 transition-colors"></i>
+              <span className="text-white text-sm font-medium">Cutting Edge Tech</span>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl mx-auto flex-1">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 max-w-7xl mx-auto flex-1">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-white/10 backdrop-blur-sm p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-300/20 hover:border-neutral-400/50 cursor-pointer hover:bg-white/15 h-20 flex items-center"
+              className="group bg-white/5 backdrop-blur-sm p-3 rounded border border-neutral-600/30 hover:border-neutral-500/50 cursor-pointer hover:bg-white/8 h-16 flex items-center transition-all duration-300 hover:shadow-lg hover:shadow-black/20 hover:-translate-y-0.5"
               onClick={() => scrollToProject(project.id)}
             >
-              <div className="flex items-center space-x-3">
-                <div className={`w-8 h-8 bg-gradient-to-br ${project.gradient} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0`}>
-                  <i className={`${project.icon} text-white text-sm`}></i>
+              <div className="flex items-center space-x-2 w-full">
+                <div className={`w-8 h-8 bg-gradient-to-br ${project.gradient} rounded flex items-center justify-center group-hover:scale-105 transition-all duration-300 flex-shrink-0 shadow-md`}>
+                  <i className={`${project.icon} text-white text-xs`}></i>
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-white text-sm font-medium truncate">{project.title}</h3>
-                  <p className="text-xs text-neutral-200 truncate">{project.description}</p>
+                  <h3 className="text-white text-xs font-semibold truncate group-hover:text-neutral-100 transition-colors">{project.title}</h3>
+                  <p className="text-xs text-neutral-300 truncate group-hover:text-neutral-200 transition-colors">{project.description}</p>
                 </div>
               </div>
             </div>
