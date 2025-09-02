@@ -71,7 +71,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                     className="relative group cursor-pointer"
                     onClick={() => openLightbox(project.images.main)}
                   >
-                    <div className="w-full h-[320px] rounded border overflow-hidden bg-neutral-200 shadow-md group-hover:shadow-xl transition-all duration-300">
+                    <div className="w-full aspect-[4/3] rounded border overflow-hidden bg-neutral-200 shadow-md group-hover:shadow-xl transition-all duration-300">
                       <img 
                         src={project.images.main} 
                         alt={`${project.title} Dashboard`}
@@ -95,7 +95,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                         className="relative group cursor-pointer"
                         onClick={() => openLightbox(image.url)}
                       >
-                        <div className="w-full h-[150px] rounded border overflow-hidden bg-neutral-200 shadow-sm group-hover:shadow-lg transition-all duration-300">
+                        <div className="w-full aspect-[4/3] rounded border overflow-hidden bg-neutral-200 shadow-sm group-hover:shadow-lg transition-all duration-300">
                           <img 
                             src={image.url} 
                             alt={image.caption}
@@ -126,17 +126,17 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
           className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
           onClick={closeLightbox}
         >
-          <div className="relative max-w-4xl max-h-full">
+          <div className="relative w-full h-full max-w-6xl max-h-full flex items-center justify-center">
             <button
               onClick={closeLightbox}
-              className="absolute -top-12 right-0 text-white hover:text-neutral-300 text-2xl"
+              className="absolute top-4 right-4 text-white hover:text-neutral-300 text-2xl z-10 bg-black/50 rounded-full w-10 h-10 flex items-center justify-center"
             >
               <i className="fa-solid fa-times"></i>
             </button>
             <img
               src={lightboxImage}
               alt="Project screenshot"
-              className="max-w-full max-h-full rounded-lg"
+              className="max-w-full max-h-full object-contain rounded-lg"
             />
           </div>
         </div>
