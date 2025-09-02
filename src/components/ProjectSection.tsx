@@ -67,20 +67,22 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
 
               <div className="space-y-5">
                 <div className="grid grid-cols-1 gap-5">
-                  <div
-                    className="relative group cursor-pointer"
-                    onClick={() => openLightbox(project.images.main)}
-                  >
-                    <div className="w-full aspect-[4/3] rounded border overflow-hidden bg-neutral-200 shadow-md group-hover:shadow-xl transition-all duration-300">
-                      <img 
-                        src={project.images.main} 
-                        alt={`${project.title} Dashboard`}
-                        className="w-full h-full object-contain bg-white transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded flex items-center justify-center">
-                      <div className="bg-white/20 backdrop-blur-sm p-3 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30">
-                        <i className="fa-solid fa-expand text-white text-lg"></i>
+                  <div>
+                    <div
+                      className="relative group cursor-pointer"
+                      onClick={() => openLightbox(project.images.main)}
+                    >
+                      <div className="w-full aspect-[4/3] rounded border overflow-hidden bg-neutral-200 shadow-md group-hover:shadow-xl transition-all duration-300">
+                        <img 
+                          src={project.images.main} 
+                          alt={`${project.title} Dashboard`}
+                          className="w-full h-full object-contain bg-white transition-transform duration-500 group-hover:scale-105"
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded flex items-center justify-center">
+                        <div className="bg-white/20 backdrop-blur-sm p-3 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30">
+                          <i className="fa-solid fa-expand text-white text-lg"></i>
+                        </div>
                       </div>
                     </div>
                     <p className="text-sm text-neutral-600 mt-3 text-center font-medium">
@@ -90,21 +92,22 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ project, index }) => {
                   
                   <div className="grid grid-cols-2 gap-3">
                     {project.images.gallery.map((image, imageIndex) => (
-                      <div
-                        key={imageIndex}
-                        className="relative group cursor-pointer"
-                        onClick={() => openLightbox(image.url)}
-                      >
-                        <div className="w-full aspect-[4/3] rounded border overflow-hidden bg-neutral-200 shadow-sm group-hover:shadow-lg transition-all duration-300">
-                          <img 
-                            src={image.url} 
-                            alt={image.caption}
-                            className="w-full h-full object-contain bg-white transition-transform duration-500 group-hover:scale-105"
-                          />
-                        </div>
-                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded flex items-center justify-center">
-                          <div className="bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            <i className="fa-solid fa-expand text-white text-sm"></i>
+                      <div key={imageIndex}>
+                        <div
+                          className="relative group cursor-pointer"
+                          onClick={() => openLightbox(image.url)}
+                        >
+                          <div className="w-full aspect-[4/3] rounded border overflow-hidden bg-neutral-200 shadow-sm group-hover:shadow-lg transition-all duration-300">
+                            <img 
+                              src={image.url} 
+                              alt={image.caption}
+                              className="w-full h-full object-contain bg-white transition-transform duration-500 group-hover:scale-105"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 rounded flex items-center justify-center">
+                            <div className="bg-white/20 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300">
+                              <i className="fa-solid fa-expand text-white text-sm"></i>
+                            </div>
                           </div>
                         </div>
                         <p className="text-xs text-neutral-600 mt-2 text-center">
