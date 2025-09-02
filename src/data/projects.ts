@@ -49,14 +49,14 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-crown',
     technologies: ['JavaScript', 'TypeScript', 'MongoDB', 'Express.js', 'Chart.js', 'Socket.io'],
     images: {
-      main: '/images/projects/stake-leaderboard/Screenshot 2025-08-26 at 01.42.21.jpg',
+      main: '/images/projects/stake-leaderboard/Screenshot 2025-09-02 at 12.20.16.jpg',
       gallery: [
         {
-          url: '/images/projects/stake-leaderboard/Screenshot 2025-08-26 at 01.35.51.jpg',
+          url: '/images/projects/stake-leaderboard/Screenshot 2025-09-02 at 12.21.24.jpg',
           caption: 'Player Performance Analytics'
         },
         {
-          url: '/images/projects/stake-leaderboard/Screenshot 2025-08-26 at 01.46.53.jpg',
+          url: '/images/projects/stake-leaderboard/Screenshot 2025-09-02 at 12.22.35.jpg',
           caption: 'Comparative Statistics Interface'
         }
       ]
@@ -72,14 +72,14 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-chart-line',
     technologies: ['Python', 'Node.js', 'Redis', 'WebSocket', 'React', 'MongoDB'],
     images: {
-      main: 'https://placehold.co/1024x768/404040/ffffff?text=Odds+Drop+Monitor',
+      main: '/images/projects/bet365/Screenshot 2025-09-02 at 12.27.41.jpg',
       gallery: [
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Market+Analysis',
+          url: '/images/projects/bet365/Screenshot 2025-09-02 at 12.30.21.jpg',
           caption: 'Market Movement Analysis'
         },
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Alert+System',
+          url: '/images/projects/bet365/Screenshot 2025-09-02 at 12.32.22.jpg',
           caption: 'Real-time Alert System'
         }
       ]
@@ -95,14 +95,14 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-shield-halved',
     technologies: ['Python', 'Django', 'PostgreSQL', 'Celery', 'React', 'Redis'],
     images: {
-      main: 'https://placehold.co/1024x768/404040/ffffff?text=Arbitrage+Scanner',
+      main: '/images/projects/surebetfusion/Screenshot 2025-09-02 at 11.32.15.jpg',
       gallery: [
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Stake+Calculator',
+          url: '/images/projects/surebetfusion/Screenshot 2025-09-02 at 11.34.16.jpg',
           caption: 'Stake Distribution Calculator'
         },
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Profit+Tracker',
+          url: '/images/projects/surebetfusion/Screenshot 2025-09-02 at 11.34.35.jpg',
           caption: 'Profit Tracking Dashboard'
         }
       ]
@@ -118,14 +118,14 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-brain',
     technologies: ['Python', 'TensorFlow', 'React Native', 'FastAPI', 'PostgreSQL'],
     images: {
-      main: 'https://placehold.co/1024x768/404040/ffffff?text=AI+Predictions',
+      main: '/images/projects/betsmartai/Screenshot 2025-09-02 at 11.36.37.jpg',
       gallery: [
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Model+Training',
+          url: '/images/projects/betsmartai/Screenshot 2025-09-02 at 12.11.05.jpg',
           caption: 'Machine Learning Model Training'
         },
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Prediction+Interface',
+          url: '/images/projects/betsmartai/Screenshot 2025-09-02 at 12.11.21.jpg',
           caption: 'Prediction Results Interface'
         }
       ]
@@ -187,14 +187,14 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-anchor',
     technologies: ['Node.js', 'Express', 'MongoDB', 'Puppeteer', 'React'],
     images: {
-      main: 'https://placehold.co/1024x768/404040/ffffff?text=Dual+Platform+Interface',
+      main: '/images/projects/maxbet-admiralbet/Screenshot 2025-09-02 at 12.43.00.jpg',
       gallery: [
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Account+Manager',
+          url: '/images/projects/maxbet-admiralbet/Screenshot 2025-09-02 at 12.45.56.jpg',
           caption: 'Multi-Account Management'
         },
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Sync+Dashboard',
+          url: '/images/projects/maxbet-admiralbet/Screenshot 2025-09-02 at 12.46.43.jpg',
           caption: 'Platform Synchronization Dashboard'
         }
       ]
@@ -233,14 +233,14 @@ export const projects: Project[] = [
     icon: 'fa-solid fa-database',
     technologies: ['Node.js', 'Express.js', 'PostgreSQL', 'GraphQL', 'Redis', 'AWS CloudFront'],
     images: {
-      main: 'https://placehold.co/1024x768/404040/ffffff?text=Data+Streaming',
+      main: '/images/projects/sportsbook-api/Screenshot 2025-09-02 at 12.53.13.jpg',
       gallery: [
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Global+Integration',
+          url: '/images/projects/sportsbook-api/Screenshot 2025-09-02 at 12.55.30.jpg',
           caption: 'Global Bookmaker Integration Hub'
         },
         {
-          url: 'https://placehold.co/600x400/f5f5f5/666666?text=Analytics+Dashboard',
+          url: '/images/projects/sportsbook-api/Screenshot 2025-09-02 at 12.57.07.jpg',
           caption: 'API Analytics and Monitoring Dashboard'
         }
       ]

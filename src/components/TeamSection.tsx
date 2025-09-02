@@ -20,7 +20,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 'vladyslav',
     name: 'Vladyslav V.',
-    avatar: '/images/team/vladyslav.jpg',
+    avatar: '/images/team/Vlad.jpg',
     location: 'Kharkiv, Ukraine',
     status: 'available',
     badges: ['Top Rated Plus', '100% Job Success'],
@@ -34,7 +34,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 'aeoncodes',
     name: 'Aeoncodes',
-    avatar: '/images/team/aeoncodes.jpg',
+    avatar: '/images/team/Aeoncodes.jpg',
     location: 'Global Team',
     status: 'available',
     badges: ['100% Job Success'],
@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 'valerii',
     name: 'Valerii V.',
-    avatar: '/images/team/valerii.jpg',
+    avatar: '/images/team/Valerii.jpg',
     location: 'Kharkiv, Ukraine',
     status: 'available',
     badges: ['Top Rated Plus', '100% Job Success'],
